@@ -1,3 +1,4 @@
+{/*
 .App {
   text-align: center;
 }
@@ -30,4 +31,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+*/}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+
+  background-image: url("./images/hogwarts_crest.png");
+  background-attachment: fixed;
+  background-position: right;
+  z-index: -10000;
+  background-repeat: no-repeat;
+
 }

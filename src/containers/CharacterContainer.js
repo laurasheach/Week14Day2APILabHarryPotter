@@ -29,7 +29,9 @@ class CharacterContainer extends Component {
   render(){
     return (
       <div className="character-container">
+      <br/>
         <h1>Harry Potter Characters</h1>
+        <br/>
         <CharacterSelector
         characters={this.state.characters}
         onCharacterSelected={this.handleCharacterSelected}

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CharacterSelector = (props) => {
-
   const options = props.characters.map((character, index) => {
     return(
       <option value={index} key={index}>
@@ -10,16 +9,16 @@ const CharacterSelector = (props) => {
     )
   });
 
+
   function handleChange(event){
     console.log(event.target.value);
     props.onCharacterSelected(event.target.value);
-
   }
 
   return (
-    <select id="character-selector" defaultValue="default" onChange={handleChange}>
-      <option disabled value="default">Choose a character...</option>
-      {options}
+      <select id="character-selector" defaultValue="default" onChange={handleChange}>
+        <option disabled value="default">Choose a character...</option>
+        {options}
       </select>
   )
 
